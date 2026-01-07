@@ -5,7 +5,10 @@ dat <- read.csv('data.csv')
 
 
 png("all_teams.png", width = 800, height = 600)
-plot(dat$pt_for_dif, dat$pt_ag_dif)
+plot(dat$pt_for_dif, dat$pt_ag_dif,
+     xlab = "Points For Differential",
+     ylab = "Points Against Differential",
+     main = "Home vs Away Point Differential by Team")
 segments(
   x0 = -5, y0 = -15,
   x1 = 15, y1 = 5,
@@ -30,9 +33,9 @@ ggplot(dat_sub, aes(x = pt_for_dif, y = pt_ag_dif, label = team_name)) +
     linewidth = 1
   ) +
   labs(
-    x = "pt_for_dif",
-    y = "pt_ag_dif",
-    title = "Teams most affected by Home or Away"
+    x = "Points For Differential",
+    y = "Points Against Differential",
+    title = "Top Home vs Away Point Differential by Team"
   )
 dev.off()
 
