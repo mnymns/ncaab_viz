@@ -26,7 +26,7 @@ For each team, I engineered:
 * **Average change in points scored per game (offense)**
 * **Average change in points allowed per game (defense)**
 * **Net average point differential**:
-  [\text{Average Offensive Change} - \text{Average Defensive Change}\]
+  Average Offensive Change - Average Defensive Change
 
 These features measure how a team’s scoring and defensive performance changed on average against conference-level competition.
 
